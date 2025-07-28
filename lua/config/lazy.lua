@@ -26,7 +26,7 @@ require("lazy").setup({
   spec = {
 	{ import = "plugins" }
   },
-  install = { colorscheme = { "catppuccin" } },
+  install = { colorscheme = { "gruvbox" } },
 
   -- automatically check for plugin updates
   checker = { enabled = true },
