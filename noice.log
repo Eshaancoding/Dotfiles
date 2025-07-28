@@ -1,0 +1,491 @@
+{
+  event = "msg_showcmd",
+  kind = {}
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_showcmd",
+  kind = { { 0, ":", 0 } }
+}
+{ 0, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 1, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "N" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 2, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "No" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 3, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "Noi" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 4, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "Noic" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 5, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "Noice" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ false,
+  event = "cmdline_hide",
+  kind = 1
+}
+{
+  event = "msg_showcmd",
+  kind = {}
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_showcmd",
+  kind = { { 0, ":", 0 } }
+}
+{ 0, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 1, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "N" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 2, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "No" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 3, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "Noi" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 4, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "Noic" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 5, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "Noice" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ false,
+  event = "cmdline_hide",
+  kind = 1
+}
+{
+  event = "msg_showcmd",
+  kind = {}
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_showcmd",
+  kind = { { 0, ":", 0 } }
+}
+{ 0, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ -1, 0, 0, -1,
+  event = "popupmenu_show",
+  kind = { { "!", "", "", "" }, { "#", "", "", "" }, { "&", "", "", "" }, { "<", "", "", "" }, { "=", "", "", "" }, { ">", "", "", "" }, { "@", "", "", "" }, { "DoMatchParen", "", "", "" }, { "EditQuery", "", "", "" }, { "Explore", "", "", "" }, { "Hexplore", "", "", "" }, { "Inspect", "", "", "" }, { "InspectTree", "", "", "" }, { "Lazy", "", "", "" }, { "Lexplore", "", "", "" }, { "LspInfo", "", "", "" }, { "LspInstall", "", "", "" }, { "LspLog", "", "", "" }, { "LspRestart", "", "", "" }, { "LspStart", "", "", "" }, { "LspStop", "", "", "" }, { "LspUninstall", "", "", "" }, { "Man", "", "", "" }, { "Mason", "", "", "" }, { "MasonInstall", "", "", "" }, { "MasonLog", "", "", "" }, { "MasonUninstall", "", "", "" }, { "MasonUninstallAll", "", "", "" }, { "MasonUpdate", "", "", "" }, { "MatchDebug", "", "", "" }, { "MatchDisable", "", "", "" }, { "MatchEnable", "", "", "" }, { "NetUserPass", "", "", "" }, { "NetrwClean", "", "", "" }, { "NetrwSettings", "", "", "" }, { "Nexplore", "", "", "" }, { "Next", "", "", "" }, { "NoMatchParen", "", "", "" }, { "Noice", "", "", "" }, { "NoiceAll", "", "", "" }, { "NoiceConfig", "", "", "" }, { "NoiceDebug", "", "", "" }, { "NoiceDisable", "", "", "" }, { "NoiceDismiss", "", "", "" }, { "NoiceEnable", "", "", "" }, { "NoiceErrors", "", "", "" }, { "NoiceFzf", "", "", "" }, { "NoiceHistory", "", "", "" }, { "NoiceLast", "", "", "" }, { "NoiceLog", "", "", "" }, { "NoicePick", "", "", "" }, { "NoiceRoutes", "", "", "" }, { "NoiceSnacks", "", "", "" }, { "NoiceStats", "", "", "" }, { "NoiceTelescope", "", "", "" }, { "NoiceViewstats", "", "", "" }, { "Notifications", "", "", "" }, { "NotificationsClear", "", "", "" }, { "Nread", "", "", "" }, { "Nsource", "", "", "" }, { "Ntree", "", "", "" }, { "Nwrite", "", "", "" }, { "Open", "", "", "" }, { "Pexplore", "", "", "" }, { "PlenaryBustedDirectory", "", "", "" }, { "PlenaryBustedFile", "", "", "" }, { "Sexplore", "", "", "" }, { "TOhtml", "", "", "" }, { "TSBufDisable", "", "", "" }, { "TSBufEnable", "", "", "" }, { "TSBufToggle", "", "", "" }, { "TSConfigInfo", "", "", "" }, { "TSDisable", "", "", "" }, { "TSEditQuery", "", "", "" }, { "TSEditQueryUserAfter", "", "", "" }, { "TSEnable", "", "", "" }, { "TSInstall", "", "", "" }, { "TSInstallFromGrammar", "", "", "" }, { "TSInstallInfo", "", "", "" }, { "TSInstallSync", "", "", "" }, { "TSModuleInfo", "", "", "" }, { "TSToggle", "", "", "" }, { "TSUninstall", "", "", "" }, { "TSUpdate", "", "", "" }, { "TSUpdateSync", "", "", "" }, { "Telescope", "", "", "" }, { "Texplore", "", "", "" }, { "Tutor", "", "", "" }, { "UpdateRemotePlugins", "", "", "" }, { "Vexplore", "", "", "" }, { "abbreviate", "", "", "" }, { "abclear", "", "", "" }, { "aboveleft", "", "", "" }, { "all", "", "", "" }, { "amenu", "", "", "" }, { "anoremenu", "", "", "" }, { "append", "", "", "" }, { "argadd", "", "", "" }, { "argdedupe", "", "", "" }, { "argdelete", "", "", "" }, { "argdo", "", "", "" }, { "argedit", "", "", "" }, { "argglobal", "", "", "" }, { "arglocal", "", "", "" }, { "args", "", "", "" }, { "argument", "", "", "" }, { "ascii", "", "", "" }, { "augroup", "", "", "" }, { "aunmenu", "", "", "" }, { "autocmd", "", "", "" }, { "bNext", "", "", "" }, { "badd", "", "", "" }, { "ball", "", "", "" }, { "balt", "", "", "" }, { "bdelete", "", "", "" }, { "belowright", "", "", "" }, { "bfirst", "", "", "" }, { "blast", "", "", "" }, { "bmodified", "", "", "" }, { "bnext", "", "", "" }, { "botright", "", "", "" }, { "bprevious", "", "", "" }, { "break", "", "", "" }, { "breakadd", "", "", "" }, { "breakdel", "", "", "" }, { "breaklist", "", "", "" }, { "brewind", "", "", "" }, { "browse", "", "", "" }, { "bufdo", "", "", "" }, { "buffer", "", "", "" }, { "buffers", "", "", "" }, { "bunload", "", "", "" }, { "bwipeout", "", "", "" }, { "cNext", "", "", "" }, { "cNfile", "", "", "" }, { "cabbrev", "", "", "" }, { "cabclear", "", "", "" }, { "cabove", "", "", "" }, { "caddbuffer", "", "", "" }, { "caddexpr", "", "", "" }, { "caddfile", "", "", "" }, { "cafter", "", "", "" }, { "call", "", "", "" }, { "catch", "", "", "" }, { "cbefore", "", "", "" }, { "cbelow", "", "", "" }, { "cbottom", "", "", "" }, { "cbuffer", "", "", "" }, { "cc", "", "", "" }, { "cclose", "", "", "" }, { "cd", "", "", "" }, { "cdo", "", "", "" }, { "center", "", "", "" }, { "cexpr", "", "", "" }, { "cfdo", "", "", "" }, { "cfile", "", "", "" }, { "cfirst", "", "", "" }, { "cgetbuffer", "", "", "" }, { "cgetexpr", "", "", "" }, { "cgetfile", "", "", "" }, { "change", "", "", "" }, { "changes", "", "", "" }, { "chdir", "", "", "" }, { "checkhealth", "", "", "" }, { "checkpath", "", "", "" }, { "checktime", "", "", "" }, { "chistory", "", "", "" }, { "clast", "", "", "" }, { "clearjumps", "", "", "" }, { "clist", "", "", "" }, { "close", "", "", "" }, { "cmap", "", "", "" }, { "cmapclear", "", "", "" }, { "cmenu", "", "", "" }, { "cnewer", "", "", "" }, { "cnext", "", "", "" }, { "cnfile", "", "", "" }, { "cnoreabbrev", "", "", "" }, { "cnoremap", "", "", "" }, { "cnoremenu", "", "", "" }, { "colder", "", "", "" }, { "colorscheme", "", "", "" }, { "comclear", "", "", "" }, { "command", "", "", "" }, { "compiler", "", "", "" }, { "confirm", "", "", "" }, { "const", "", "", "" }, { "continue", "", "", "" }, { "copen", "", "", "" }, { "copy", "", "", "" }, { "cpfile", "", "", "" }, { "cprevious", "", "", "" }, { "cquit", "", "", "" }, { "crewind", "", "", "" }, { "cunabbrev", "", "", "" }, { "cunmap", "", "", "" }, { "cunmenu", "", "", "" }, { "cwindow", "", "", "" }, { "debug", "", "", "" }, { "debuggreedy", "", "", "" }, { "defer", "", "", "" }, { "delcommand", "", "", "" }, { "delete", "", "", "" }, { "delfunction", "", "", "" }, { "delmarks", "", "", "" }, { "detach", "", "", "" }, { "diffget", "", "", "" }, { "diffoff", "", "", "" }, { "diffpatch", "", "", "" }, { "diffput", "", "", "" }, { "diffsplit", "", "", "" }, { "diffthis", "", "", "" }, { "diffupdate", "", "", "" }, { "digraphs", "", "", "" }, { "display", "", "", "" }, { "djump", "", "", "" }, { "dlist", "", "", "" }, { "doautoall", "", "", "" }, { "doautocmd", "", "", "" }, { "drop", "", "", "" }, { "dsearch", "", "", "" }, { "dsplit", "", "", "" }, { "earlier", "", "", "" }, { "echo", "", "", "" }, { "echoerr", "", "", "" }, { "echohl", "", "", "" }, { "echomsg", "", "", "" }, { "echon", "", "", "" }, { "edit", "", "", "" }, { "else", "", "", "" }, { "elseif", "", "", "" }, { "emenu", "", "", "" }, { "endfor", "", "", "" }, { "endfunction", "", "", "" }, { "endif", "", "", "" }, { "endtry", "", "", "" }, { "endwhile", "", "", "" }, { "enew", "", "", "" }, { "eval", "", "", "" }, { "ex", "", "", "" }, { "execute", "", "", "" }, { "exit", "", "", "" }, { "exusage", "", "", "" }, { "fclose", "", "", "" }, { "file", "", "", "" }, { "files", "", "", "" }, { "filetype", "", "", "" }, { "filter", "", "", "" }, { "finally", "", "", "" }, { "find", "", "", "" }, { "finish", "", "", "" }, { "first", "", "", "" }, { "fold", "", "", "" }, { "foldclose", "", "", "" }, { "folddoclosed", "", "", "" }, { "folddoopen", "", "", "" }, { "foldopen", "", "", "" }, { "for", "", "", "" }, { "function", "", "", "" }, { "global", "", "", "" }, { "goto", "", "", "" }, { "grep", "", "", "" }, { "grepadd", "", "", "" }, { "gui", "", "", "" }, { "gvim", "", "", "" }, { "help", "", "", "" }, { "helpclose", "", "", "" }, { "helpgrep", "", "", "" }, { "helptags", "", "", "" }, { "hide", "", "", "" }, { "highlight", "", "", "" }, { "history", "", "", "" }, { "horizontal", "", "", "" }, { "iabbrev", "", "", "" }, { "iabclear", "", "", "" }, { "if", "", "", "" }, { "ijump", "", "", "" }, { "ilist", "", "", "" }, { "imap", "", "", "" }, { "imapclear", "", "", "" }, { "imenu", "", "", "" }, { "inoreabbrev", "", "", "" }, { "inoremap", "", "", "" }, { "inoremenu", "", "", "" }, { "insert", "", "", "" }, { "intro", "", "", "" }, { "isearch", "", "", "" }, { "isplit", "", "", "" }, { "iunabbrev", "", "", "" }, { "iunmap", "", "", "" }, { "iunmenu", "", "", "" }, { "join", "", "", "" }, { "jumps", "", "", "" }, { "k", "", "", "" }, { "keepalt", "", "", "" }, { "keepjumps", "", "", "" }, { "keepmarks", "", "", "" }, { "keeppatterns", "", "", "" }, { "lNext", "", "", "" }, { "lNfile", "", "", "" }, { "labove", "", "", "" }, { "laddbuffer", "", "", "" }, { "laddexpr", "", "", "" }, { "laddfile", "", "", "" }, { "lafter", "", "", "" }, { "language", "", "", "" }, { "last", "", "", "" }, { "later", "", "", "" }, { "lbefore", "", "", "" }, { "lbelow", "", "", "" }, { "lbottom", "", "", "" }, { "lbuffer", "", "", "" }, { "lcd", "", "", "" }, { "lchdir", "", "", "" }, { "lclose", "", "", "" }, { "ldo", "", "", "" }, { "left", "", "", "" }, { "leftabove", "", "", "" }, { "let", "", "", "" }, { "lexpr", "", "", "" }, { "lfdo", "", "", "" }, { "lfile", "", "", "" }, { "lfirst", "", "", "" }, { "lgetbuffer", "", "", "" }, { "lgetexpr", "", "", "" }, { "lgetfile", "", "", "" }, { "lgrep", "", "", "" }, { "lgrepadd", "", "", "" }, { "lhelpgrep", "", "", "" }, { "lhistory", "", "", "" }, { "list", "", "", "" }, { "ll", "", "", "" }, { "llast", "", "", "" }, { "llist", "", "", "" }, { "lmake", "", "", "" }, { "lmap", "", "", "" }, { "lmapclear", "", "", "" }, { "lnewer", "", "", "" }, { "lnext", "", "", "" }, { "lnfile", "", "", "" }, { "lnoremap", "", "", "" }, { "loadkeymap", "", "", "" }, { "loadview", "", "", "" }, { "lockmarks", "", "", "" }, { "lockvar", "", "", "" }, { "lolder", "", "", "" }, { "lopen", "", "", "" }, { "lpfile", "", "", "" }, { "lprevious", "", "", "" }, { "lrewind", "", "", "" }, { "ls", "", "", "" }, { "ltag", "", "", "" }, { "lua", "", "", "" }, { "luado", "", "", "" }, { "luafile", "", "", "" }, { "lunmap", "", "", "" }, { "lvimgrep", "", "", "" }, { "lvimgrepadd", "", "", "" }, { "lwindow", "", "", "" }, { "make", "", "", "" }, { "map", "", "", "" }, { "mapclear", "", "", "" }, { "mark", "", "", "" }, { "marks", "", "", "" }, { "match", "", "", "" }, { "menu", "", "", "" }, { "menutranslate", "", "", "" }, { "messages", "", "", "" }, { "mkexrc", "", "", "" }, { "mksession", "", "", "" }, { "mkspell", "", "", "" }, { "mkview", "", "", "" }, { "mkvimrc", "", "", "" }, { "mode", "", "", "" }, { "move", "", "", "" }, { "mzfile", "", "", "" }, { "mzscheme", "", "", "" }, { "new", "", "", "" }, { "next", "", "", "" }, { "nmap", "", "", "" }, { "nmapclear", "", "", "" }, { "nmenu", "", "", "" }, { "nnoremap", "", "", "" }, { "nnoremenu", "", "", "" }, { "noautocmd", "", "", "" }, { "nohlsearch", "", "", "" }, { "noreabbrev", "", "", "" }, { "noremap", "", "", "" }, { "noremenu", "", "", "" }, { "normal", "", "", "" }, { "noswapfile", "", "", "" }, { "number", "", "", "" }, { "nunmap", "", "", "" }, { "nunmenu", "", "", "" }, { "oldfiles", "", "", "" }, { "omap", "", "", "" }, { "omapclear", "", "", "" }, { "omenu", "", "", "" }, { "only", "", "", "" }, { "onoremap", "", "", "" }, { "onoremenu", "", "", "" }, { "options", "", "", "" }, { "ounmap", "", "", "" }, { "ounmenu", "", "", "" }, { "ownsyntax", "", "", "" }, { "packadd", "", "", "" }, { "packloadall", "", "", "" }, { "pbuffer", "", "", "" }, { "pclose", "", "", "" }, { "pedit", "", "", "" }, { "perl", "", "", "" }, { "perldo", "", "", "" }, { "perlfile", "", "", "" }, { "pop", "", "", "" }, { "popup", "", "", "" }, { "ppop", "", "", "" }, { "preserve", "", "", "" }, { "previous", "", "", "" }, { "print", "", "", "" }, { "profdel", "", "", "" }, { "profile", "", "", "" }, { "psearch", "", "", "" }, { "ptNext", "", "", "" }, { "ptag", "", "", "" }, { "ptfirst", "", "", "" }, { "ptjump", "", "", "" }, { "ptlast", "", "", "" }, { "ptnext", "", "", "" }, { "ptprevious", "", "", "" }, { "ptrewind", "", "", "" }, { "ptselect", "", "", "" }, { "put", "", "", "" }, { "pwd", "", "", "" }, { "py3", "", "", "" }, { "py3do", "", "", "" }, { "py3file", "", "", "" }, { "pydo", "", "", "" }, { "pyfile", "", "", "" }, { "python", "", "", "" }, { "python3", "", "", "" }, { "pythonx", "", "", "" }, { "pyx", "", "", "" }, { "pyxdo", "", "", "" }, { "pyxfile", "", "", "" }, { "qall", "", "", "" }, { "quit", "", "", "" }, { "quitall", "", "", "" }, { "read", "", "", "" }, { "recover", "", "", "" }, { "redir", "", "", "" }, { "redo", "", "", "" }, { "redraw", "", "", "" }, { "redrawstatus", "", "", "" }, { "redrawtabline", "", "", "" }, { "registers", "", "", "" }, { "resize", "", "", "" }, { "retab", "", "", "" }, { "return", "", "", "" }, { "rewind", "", "", "" }, { "right", "", "", "" }, { "rightbelow", "", "", "" }, { "rshada", "", "", "" }, { "ruby", "", "", "" }, { "rubydo", "", "", "" }, { "rubyfile", "", "", "" }, { "rundo", "", "", "" }, { "runtime", "", "", "" }, { "rviminfo", "", "", "" }, { "sNext", "", "", "" }, { "sall", "", "", "" }, { "sandbox", "", "", "" }, { "sargument", "", "", "" }, { "saveas", "", "", "" }, { "sbNext", "", "", "" }, { "sball", "", "", "" }, { "sbfirst", "", "", "" }, { "sblast", "", "", "" }, { "sbmodified", "", "", "" }, { "sbnext", "", "", "" }, { "sbprevious", "", "", "" }, { "sbrewind", "", "", "" }, { "sbuffer", "", "", "" }, { "scriptencoding", "", "", "" }, { "scriptnames", "", "", "" }, { "set", "", "", "" }, { "setfiletype", "", "", "" }, { "setglobal", "", "", "" }, { "setlocal", "", "", "" }, { "sfind", "", "", "" }, { "sfirst", "", "", "" }, { "sign", "", "", "" }, { "silent", "", "", "" }, { "simalt", "", "", "" }, { "slast", "", "", "" }, { "sleep", "", "", "" }, { "smagic", "", "", "" }, { "smap", "", "", "" }, { "smapclear", "", "", "" }, { "smenu", "", "", "" }, { "snext", "", "", "" }, { "snomagic", "", "", "" }, { "snoremap", "", "", "" }, { "snoremenu", "", "", "" }, { "sort", "", "", "" }, { "source", "", "", "" }, { "spelldump", "", "", "" }, { "spellgood", "", "", "" }, { "spellinfo", "", "", "" }, { "spellrare", "", "", "" }, { "spellrepall", "", "", "" }, { "spellundo", "", "", "" }, { "spellwrong", "", "", "" }, { "split", "", "", "" }, { "sprevious", "", "", "" }, { "srewind", "", "", "" }, { "stag", "", "", "" }, { "startgreplace", "", "", "" }, { "startinsert", "", "", "" }, { "startreplace", "", "", "" }, { "stjump", "", "", "" }, { "stop", "", "", "" }, { "stopinsert", "", "", "" }, { "stselect", "", "", "" }, { "substitute", "", "", "" }, { "sunhide", "", "", "" }, { "sunmap", "", "", "" }, { "sunmenu", "", "", "" }, { "suspend", "", "", "" }, { "sview", "", "", "" }, { "swapname", "", "", "" }, { "syncbind", "", "", "" }, { "syntax", "", "", "" }, { "syntime", "", "", "" }, { "t", "", "", "" }, { "tNext", "", "", "" }, { "tab", "", "", "" }, { "tabNext", "", "", "" }, { "tabclose", "", "", "" }, { "tabdo", "", "", "" }, { "tabedit", "", "", "" }, { "tabfind", "", "", "" }, { "tabfirst", "", "", "" }, { "tablast", "", "", "" }, { "tabmove", "", "", "" }, { "tabnew", "", "", "" }, { "tabnext", "", "", "" }, { "tabonly", "", "", "" }, { "tabprevious", "", "", "" }, { "tabrewind", "", "", "" }, { "tabs", "", "", "" }, { "tag", "", "", "" }, { "tags", "", "", "" }, { "tcd", "", "", "" }, { "tchdir", "", "", "" }, { "tcl", "", "", "" }, { "tcldo", "", "", "" }, { "tclfile", "", "", "" }, { "terminal", "", "", "" }, { "tfirst", "", "", "" }, { "throw", "", "", "" }, { "tjump", "", "", "" }, { "tlast", "", "", "" }, { "tlmenu", "", "", "" }, { "tlnoremenu", "", "", "" }, { "tlunmenu", "", "", "" }, { "tmap", "", "", "" }, { "tmapclear", "", "", "" }, { "tmenu", "", "", "" }, { "tnext", "", "", "" }, { "tnoremap", "", "", "" }, { "topleft", "", "", "" }, { "tprevious", "", "", "" }, { "trewind", "", "", "" }, { "trust", "", "", "" }, { "try", "", "", "" }, { "tselect", "", "", "" }, { "tunmap", "", "", "" }, { "tunmenu", "", "", "" }, { "unabbreviate", "", "", "" }, { "undo", "", "", "" }, { "undojoin", "", "", "" }, { "undolist", "", "", "" }, { "unhide", "", "", "" }, { "unlet", "", "", "" }, { "unlockvar", "", "", "" }, { "unmap", "", "", "" }, { "unmenu", "", "", "" }, { "unsilent", "", "", "" }, { "update", "", "", "" }, { "verbose", "", "", "" }, { "version", "", "", "" }, { "vertical", "", "", "" }, { "vglobal", "", "", "" }, { "view", "", "", "" }, { "vimgrep", "", "", "" }, { "vimgrepadd", "", "", "" }, { "visual", "", "", "" }, { "viusage", "", "", "" }, { "vmap", "", "", "" }, { "vmapclear", "", "", "" }, { "vmenu", "", "", "" }, { "vnew", "", "", "" }, { "vnoremap", "", "", "" }, { "vnoremenu", "", "", "" }, { "vsplit", "", "", "" }, { "vunmap", "", "", "" }, { "vunmenu", "", "", "" }, { "wNext", "", "", "" }, { "wall", "", "", "" }, { "while", "", "", "" }, { "wincmd", "", "", "" }, { "windo", "", "", "" }, { "winpos", "", "", "" }, { "winsize", "", "", "" }, { "wnext", "", "", "" }, { "wprevious", "", "", "" }, { "wq", "", "", "" }, { "wqall", "", "", "" }, { "write", "", "", "" }, { "wshada", "", "", "" }, { "wundo", "", "", "" }, { "wviminfo", "", "", "" }, { "xall", "", "", "" }, { "xit", "", "", "" }, { "xmap", "", "", "" }, { "xmapclear", "", "", "" }, { "xmenu", "", "", "" }, { "xnoremap", "", "", "" }, { "xnoremenu", "", "", "" }, { "xunmap", "", "", "" }, { "xunmenu", "", "", "" }, { "yank", "", "", "" }, { "z", "", "", "" }, { "~", "", "", "" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 0, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "popupmenu_select",
+  kind = 0
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 0, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "" } }
+}
+{ 1, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "!" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "popupmenu_select",
+  kind = 1
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 1, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "#" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "popupmenu_select",
+  kind = 2
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 1, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "&" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "popupmenu_select",
+  kind = 3
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 1, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "<" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "popupmenu_select",
+  kind = 4
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 1, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "=" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "popupmenu_select",
+  kind = 5
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 1, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, ">" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "popupmenu_select",
+  kind = 6
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 1, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "@" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "popupmenu_select",
+  kind = 7
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 12, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "DoMatchParen" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "popupmenu_select",
+  kind = 8
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 9, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "EditQuery" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "popupmenu_hide"
+}
+{ true,
+  event = "cmdline_hide",
+  kind = 1
+}
+{
+  event = "msg_showcmd",
+  kind = {}
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_showcmd",
+  kind = { { 0, "^[", 0 } }
+}
+{
+  event = "msg_showcmd",
+  kind = {}
+}
+{
+  event = "msg_showcmd",
+  kind = { { 0, "^[", 0 } }
+}
+{
+  event = "msg_showcmd",
+  kind = {}
+}
+{
+  event = "msg_showcmd",
+  kind = { { 0, ":", 0 } }
+}
+{ 0, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ 1, ":", "", 0, 1, 0,
+  event = "cmdline_show",
+  kind = { { 0, "x" } }
+}
+{
+  event = "msg_ruler",
+  kind = { { 1, "32,0-1        All", 61 } }
+}
+{ false,
+  event = "cmdline_hide",
+  kind = 1
+}
+{ { { 0, '"init.lua" ', 0 } }, false, false,
+  event = "msg_show",
+  kind = "bufwrite"
+}
+{ { { 0, '"init.lua" 47L, 1406B written', 0 } }, true, true,
+  event = "msg_show",
+  kind = "bufwrite"
+}
