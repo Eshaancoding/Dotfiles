@@ -1,3 +1,10 @@
+-- stuff to setup :
+-- Welcome screen system
+-- Remove type for python
+-- When I open up a new program, it's a "tab", and I can close and go to previous
+
+-- That's it! Then get to coding lil boy
+
 -- Set 24-bit color
 vim.opt.termguicolors = true
 
@@ -39,11 +46,12 @@ vim.cmd [[
 
 	colorscheme gruvbox
 
-	" this is to remove status line
+	" More minimistic! Remove statusline and tabline
 	set laststatus=0	
+	set showtabline=0
 ]]
 
-
+require("telescope").load_extension "file_browser"
 
 ------- Keybinds for telescope -------
 local builtin = require('telescope.builtin')
@@ -56,6 +64,7 @@ vim.keymap.set('n', 'cd', builtin.lsp_definitions, { desc = 'Telescope definitio
 vim.keymap.set('n', 'K', function()
 	vim.diagnostic.open_float(0, {focusable=true})
 end, { desc = 'LSP Hover' }) -- show LSP hover if needed
+
 
 -- This is just to make sure that notify background notifs stays quiet
 require("notify").setup({
@@ -86,6 +95,8 @@ vim.notify = function(msg, ...)
   return notify_original(msg, ...)
 end
 
+-- Yes, I am not a real python programmer
+-- Will implement type checking for my projects when I really need to
 
 -- if terminal press escape to actually escape
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { noremap = true })
@@ -96,12 +107,19 @@ vim.keymap.set("n", "<Esc>", "<Cmd>nohlsearch<CR>", { silent = true }) -- also w
 vim.keymap.set('n', '<C-r>', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
--- command "Config" opens up this file
+------------- keybinds for tab --------
+vim.keymap.set('n', '<C-t>', ':tabnew<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<C-Tab>', ':tabnext<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', 'T', ':terminal<CR>', { noremap = true, silent = true })
+---
+-------------- Open common files -------------- 
 vim.api.nvim_create_user_command("Config", function()
   vim.cmd("edit ~/.config/nvim/init.lua")
 end, {})
-
--- Refresh command to source this file
 vim.api.nvim_create_user_command("Refresh", function()
   vim.cmd("source ~/.config/nvim/init.lua")
 end, {})
+vim.api.nvim_create_user_command("Todo", function()
+  vim.cmd("e ./TODO.md")
+end, {})
+
