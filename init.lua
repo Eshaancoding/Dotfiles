@@ -1,9 +1,8 @@
 -- stuff to setup :
--- Welcome screen system
--- Remove type for python
--- When I open up a new program, it's a "tab", and I can close and go to previous
+-- Welcome screen system (with session support?)
+-- Extra: When I open up a new program, it's a "tab", and I can close and go to previous
 
--- That's it! Then get to coding lil boy
+-- note that I add this to the .zshrc as well: alias clear="printf \"\33c\e[3J\""
 
 -- Set 24-bit color
 vim.opt.termguicolors = true
@@ -11,7 +10,7 @@ vim.opt.termguicolors = true
 -- Set the font
 vim.go.guifont = "Liga SFMono Nerd Font"
 
--- Load all configuration files (ex: gruvbox) 
+-- Load all configuration files
 require("config.lazy")
 
 -- Gruvbox setup
@@ -65,7 +64,6 @@ vim.keymap.set('n', 'K', function()
 	vim.diagnostic.open_float(0, {focusable=true})
 end, { desc = 'LSP Hover' }) -- show LSP hover if needed
 
-
 -- This is just to make sure that notify background notifs stays quiet
 require("notify").setup({
   background_colour = "#000000"
@@ -95,30 +93,47 @@ vim.notify = function(msg, ...)
   return notify_original(msg, ...)
 end
 
--- Yes, I am not a real python programmer
--- Will implement type checking for my projects when I really need to
+
+-- LSP Config
+
+
+
 
 -- if terminal press escape to actually escape
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { noremap = true })
 vim.keymap.set("n", "<Esc>", "<Cmd>nohlsearch<CR>", { silent = true }) -- also when I am searching, disable it at escape 
 
+-- Pretty hacky solution to this problem... 
+vim.keymap.set('t', '<C-l>', function ()
+	local enter = vim.api.nvim_replace_termcodes("<CR>", true, true, true)
+	vim.fn.feedkeys("clear" .. enter, 't')  -- Send the 'clear' command with Enter appended to execute it in the terminal
+
+	-- reset scrollback
+	vim.cmd("set scrollback=1")
+	vim.cmd("sleep 10m")
+	vim.cmd("set scrollback=1024")
+end)
+
 --
 -- Nerd tree (could be more professionally done)
-vim.keymap.set('n', '<C-r>', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<C-E>', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
 ------------- keybinds for tab --------
 vim.keymap.set('n', '<C-t>', ':tabnew<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-Tab>', ':tabnext<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', 'T', ':terminal<CR>', { noremap = true, silent = true })
----
--------------- Open common files -------------- 
+
+------------ Commands to add to vim as I use them often --------
 vim.api.nvim_create_user_command("Config", function()
   vim.cmd("edit ~/.config/nvim/init.lua")
 end, {})
+
 vim.api.nvim_create_user_command("Refresh", function()
   vim.cmd("source ~/.config/nvim/init.lua")
+  vim.cmd(":LspRestart")
 end, {})
+
 vim.api.nvim_create_user_command("Todo", function()
   vim.cmd("e ./TODO.md")
 end, {})
