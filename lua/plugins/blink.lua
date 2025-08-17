@@ -25,9 +25,9 @@ return {
     -- C-k: Toggle signature help (if signature.enabled = true)
     --
     -- See :h blink-cmp-config-keymap for defining your own keymap
-    keymap = {
-		  preset = "enter",
-		  ["<Tab>"] = { "accept", "fallback" },
+	keymap = {
+ 		  preset = "enter",
+		  ["<Tab>"] = { "select_next", "fallback" },
 		  ["<S-Tab>"] = { "select_prev", "fallback" }
 	},
 

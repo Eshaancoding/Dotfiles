@@ -1,6 +1,7 @@
 -- stuff to setup :
 -- Welcome screen system (with session support?)
--- Extra: When I open up a new program, it's a "tab", and I can close and go to previous
+-- Extra: When I open up a new program, it's a new tab, and I can close and go to previous
+-- Ctrl r replace stuff
 
 -- note that I add this to the .zshrc as well: alias clear="printf \"\33c\e[3J\""
 
@@ -8,7 +9,10 @@
 vim.opt.termguicolors = true
 
 -- Set the font
-vim.go.guifont = "Liga SFMono Nerd Font"
+
+-- ultrawide: 13.5
+-- computer: 12.5
+vim.opt.guifont = {"Liga SFMono Nerd Font", ":h12.5"}
 
 -- Load all configuration files
 require("config.lazy")
@@ -42,6 +46,7 @@ vim.cmd [[
 	set tabstop=4
 	set shiftwidth=4
 	set clipboard=unnamed " use system keyboard
+	set nowrap
 
 	colorscheme gruvbox
 
@@ -50,19 +55,33 @@ vim.cmd [[
 	set showtabline=0
 ]]
 
-require("telescope").load_extension "file_browser"
+local telescope = require("telescope")
+telescope.setup {
+  extensions = {
+    file_browser = {
+	  hidden = { file_browser = true, folder_browser = true },
+	  path = "~/Coding/"
+    },
+  },
+
+}
+
+telescope.load_extension "file_browser"
 
 ------- Keybinds for telescope -------
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<C-o>', builtin.lsp_dynamic_workspace_symbols, { desc = 'Telescope find workspace symbol' }) -- navigate between workspace symbols (global, not local file) 
 vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = 'Telescope find files' }) -- switch easily between files
-vim.keymap.set('n', '<C-e>', builtin.diagnostics, { desc = 'Telescope find files' }) -- search within errors in a file
+vim.keymap.set('n', '<C-l>', builtin.diagnostics, { desc = 'Telescope find files' }) -- search within errors in a file
 vim.keymap.set('n', '<C-f>', builtin.live_grep, { desc = 'Telescope find files' }) -- search within errors in a file
 vim.keymap.set('n', 'cr', builtin.lsp_references, { desc = 'Telescope references' })
 vim.keymap.set('n', 'cd', builtin.lsp_definitions, { desc = 'Telescope definitions' })
 vim.keymap.set('n', 'K', function()
 	vim.diagnostic.open_float(0, {focusable=true})
 end, { desc = 'LSP Hover' }) -- show LSP hover if needed
+
+-- fterm setup
+vim.keymap.set('n', 't', require('FTerm').toggle)
 
 -- This is just to make sure that notify background notifs stays quiet
 require("notify").setup({
@@ -92,11 +111,6 @@ vim.notify = function(msg, ...)
   end
   return notify_original(msg, ...)
 end
-
-
--- LSP Config
-
-
 
 
 -- if terminal press escape to actually escape
@@ -131,7 +145,7 @@ end, {})
 
 vim.api.nvim_create_user_command("Refresh", function()
   vim.cmd("source ~/.config/nvim/init.lua")
-  vim.cmd(":LspRestart")
+-- vim.cmd(":LspRestart")
 end, {})
 
 vim.api.nvim_create_user_command("Todo", function()
