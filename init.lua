@@ -12,7 +12,7 @@ vim.opt.termguicolors = true
 
 -- ultrawide: 13.5
 -- computer: 12.5
-vim.opt.guifont = {"Liga SFMono Nerd Font", ":h12.5"}
+vim.opt.guifont = {"Liga SFMono Nerd Font", ":h12"}
 
 -- Load all configuration files
 require("config.lazy")
