@@ -115,14 +115,17 @@ end
 
 -- if terminal press escape to actually escape
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { noremap = true })
-vim.keymap.set("n", "<Esc>", "<Cmd>nohlsearch<CR>", { silent = true }) -- also when I am searching, disable it at escape 
+
+-- also when I am searching, disable it at escape 
+vim.keymap.set("n", "<Esc>", "<Cmd>nohlsearch<CR>", { silent = true })
 
 -- Pretty hacky solution to this problem... 
+-- Clear the terminal (including the terminal buffer)
 vim.keymap.set('t', '<C-l>', function ()
 	local enter = vim.api.nvim_replace_termcodes("<CR>", true, true, true)
 	vim.fn.feedkeys("clear" .. enter, 't')  -- Send the 'clear' command with Enter appended to execute it in the terminal
 
-	-- reset scrollback
+	-- reset scrollback (hacky solution...)
 	vim.cmd("set scrollback=1")
 	vim.cmd("sleep 10m")
 	vim.cmd("set scrollback=1024")
