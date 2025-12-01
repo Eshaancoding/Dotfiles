@@ -1,10 +1,9 @@
 return {
     "neovim/nvim-lspconfig",
     config = function()
-      local lspconfig = require("lspconfig")
-
       -- Lua language server setup
-      lspconfig.lua_ls.setup {
+		--[[
+	  vim.lsp.config("lua_ls") {
         settings = {
           Lua = {
             runtime = { version = "LuaJIT" },
@@ -16,7 +15,7 @@ return {
       }
 
       -- Pyright (Python) setup with type checking off
-      lspconfig.pyright.setup {
+      vim.lsp.config("pyright") {
         settings = {
           python = {
             analysis = {
@@ -25,6 +24,7 @@ return {
           },
         },
       }
+	]]--
 
       -- You can add other language servers setups here...
     end

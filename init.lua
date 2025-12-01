@@ -1,8 +1,8 @@
 -- stuff to setup :
+-- when split screen horizontally, how about it splits with the same file and not a blank slate
 -- Welcome screen system (with session support?)
+-- Ctrl r replace symbol
 -- Extra: When I open up a new program, it's a new tab, and I can close and go to previous
--- Ctrl r replace stuff
-
 -- note that I add this to the .zshrc as well: alias clear="printf \"\33c\e[3J\""
 
 -- Set 24-bit color
@@ -12,7 +12,16 @@ vim.opt.termguicolors = true
 
 -- ultrawide: 13.5
 -- computer: 12.5
-vim.opt.guifont = {"Liga SFMono Nerd Font", ":h12"}
+
+-- Font up (ultrawide) and font down (small computer)
+vim.keymap.set('n', 'fk', function ()
+	vim.opt.guifont = {"Liga SFMono Nerd Font", ":h13.5"}
+	vim.cmd("source ~/.config/nvim/init.lua")
+end)
+vim.keymap.set('n', 'fj', function ()
+	vim.opt.guifont = {"Liga SFMono Nerd Font", ":h12.5"}
+	vim.cmd("source ~/.config/nvim/init.lua")
+end)
 
 -- Load all configuration files
 require("config.lazy")
@@ -112,6 +121,16 @@ vim.notify = function(msg, ...)
   return notify_original(msg, ...)
 end
 
+-- Flash on search
+require("flash").setup({
+  modes = {
+    search = {
+      enabled = true,  -- Enable flash.nvim during / and ? searches
+      highlight = { backdrop = true },
+      jump = { history = true, register = true, nohlsearch = true },
+    },
+  },
+})
 
 -- if terminal press escape to actually escape
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { noremap = true })
@@ -131,10 +150,24 @@ vim.keymap.set('t', '<C-l>', function ()
 	vim.cmd("set scrollback=1024")
 end)
 
+--- 
+
+--[[
+require("remote-nvim").setup({
+  remote_dir = "/sailhome/eshaanb/",
+  offline_mode = {
+    enabled = true,
+    no_github = true,
+    cache_dir = "/sailhome/eshaanb/.cache/"
+  }
+})
+]]--
+
 --
 -- Nerd tree (could be more professionally done)
 vim.keymap.set('n', '<C-E>', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+
 
 ------------- keybinds for tab --------
 vim.keymap.set('n', '<C-t>', ':tabnew<CR>', { noremap = true, silent = true })
@@ -154,4 +187,19 @@ end, {})
 vim.api.nvim_create_user_command("Todo", function()
   vim.cmd("e ./TODO.md")
 end, {})
+
+-- I pretty weird and whenever I save I sometimes do :W instead of :w. I'm fixing that
+--
+vim.api.nvim_create_user_command("W", function()
+  vim.cmd("w")
+end, {})
+
+-- initialize file_browser at startup
+--
+--vim.api.nvim_create_autocmd("VimEnter", {
+	--callback = function ()
+		--vim.cmd("Telescope file_browser")
+	--end
+--})
+
 
